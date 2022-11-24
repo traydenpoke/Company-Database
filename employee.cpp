@@ -1,17 +1,23 @@
 #include "employee.h"
 #include <iostream>
-using namespace std;
+#include <sstream>
 
-Employee::Employee(int id, string name) {
-    this->id = id;
+Employee::Employee(int id, std::string name) {
+    this->empId = id;
     this->name = name;
 }    
 
 Employee::Employee() {
-    this->id = -1;
-    this-> name = " ";
+    this->empId = -1;
+    this->name = " ";
 }
 
 void Employee::setId(int id) {
-    this->id = id;
+    this->empId = id;
 }    
+
+std::string Employee::toString() {
+    std::ostringstream s;
+    s << "Employee " << this->empId << ": " << this->name << ".\n";
+    return s.str();
+}
