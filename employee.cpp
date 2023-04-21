@@ -10,11 +10,7 @@ Employee::Employee(int id, std::string name) {
 Employee::Employee() {
     this->empId = -1;
     this->name = " ";
-}
-
-void Employee::setId(int id) {
-    this->empId = id;
-}    
+} 
 
 std::string Employee::toString() {
     std::ostringstream s;

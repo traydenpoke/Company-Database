@@ -21,7 +21,6 @@ int main() {
 void getInput() {
 	int input;
 	std::string name;
-	Employee *emp;
 	do {
 		std::cout << "--------------------------------------------" << std::endl;
 		std::cout << "Enter 1 to display employee list." << std::endl;
@@ -46,10 +45,8 @@ void getInput() {
 			case 3:
 				std::cout << "Enter name to remove from list: ";
 				std::getline(std::cin, name);
-				emp = EmployeeUtils::removeEmp(name, empList);
+				EmployeeUtils::removeEmp(name, empList);
 				break;
-			// case 4:
-				// display previously removed employee
 			default:
 				std::cout << "Exiting program.";
 				break;

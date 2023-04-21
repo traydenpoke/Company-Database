@@ -16,3 +16,15 @@ CompanyDatabase.sln
 .vs/CompanyDatabase/FileContentIndex/fe0a41be-929b-4f39-8c2e-c5e3175f3e90.vsidx
 .vs/CompanyDatabase/FileContentIndex/f6ee402f-c1c2-46ce-90a0-dd2d57760e10.vsidx
 .vs/CompanyDatabase/FileContentIndex/aa03d548-6b89-4b84-8ce9-17a7edfb21c6.vsidx
+*.idb
+*.obj
+*.enc
+*.pdb
+*.txt
+*.tlog
+*.log
+*.ilk
+*.recipe
+*.exe
+*.ipch
+*.vsidx
